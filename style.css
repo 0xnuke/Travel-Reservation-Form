@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-image: url(https://giphy.com/gifs/alltheanimeuk-anime-limited-all-the-WnCE8LI1PsOc09M6Sn);
+}
+
+body {
+    background-image: url('https://wallpapercave.com/dwp2x/wp6423189.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    text-align: center;
+    padding-bottom: 60px;
+    color: #fff;
+}
+
+.form-container{
+    padding: 80px 400px;
+    max-height: 1440px;
+}
+
+.form-card{
+    backdrop-filter: blur(12px);
+    border: rgba(255, 255, 255, 0.5) solid 1px;
+    padding: 80px 80px;
+    border-radius: 8px;
+}
+
+.form {
+    padding-bottom: 10px;
+}
+
+.label-box {
+    font-size: 18px;
+    text-align: left;
+    color: #fff;
+}
+
+input[type="text"],[type="number"],[type="email"],[type="date"]{
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    border: none;
+    border-bottom: rgba(255, 255, 255, 0.5) solid 1px;
+    font-size: 1em;
+    padding:0 35px 0 5px;
+    color: #fff;
+}
+
+input[type="text"]:hover,[type="number"]:hover,[type="email"]:hover,[type="date"]:hover,select:hover{
+    border-bottom: rgba(255, 255, 255, 0.5) solid 4px;
+    transition: 0.15s;
+}
+input::placeholder,[type="date"]{
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 200;
+}
+
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+::-webkit-calendar-picker-indicator:hover {
+    opacity: 1
+  }
+
+select{
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    border: none;
+    border-bottom: rgba(255, 255, 255, 0.5) solid 1px;
+    font-size: 1em;
+    padding:0 35px 0 5px;
+    color: #fff;
+}
+
+.label-choose{
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 200;
+    font-size: 18px;
+}
+
+button{
+    margin-top: 40px;
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background-color: #fff;
+}
+
+button:hover{
+    background-color: rgba(255, 255, 255, 0.5)
+}
+
+button:active{
+    background-color: #fff;
+}
