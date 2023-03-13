@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Reservation Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section class="form-container">
+        <div class="form-card">
+            <header>
+                <h1>Travel reservation form</h1>
+                <h3>*denotes mandotory</h3>
+            </header>
+            <form action="/index.html">
+                <!-- name -->
+                <div class="form">
+                    <label for="full-name" class="label-box">Full name*:</label>
+                    <br>
+                    <input type="text" name="full-name" placeholder="FirstName LastName" required class="input-box">
+                    <br>
+                </div>
+                <!-- email -->
+                <div class="form">
+                    <label for="email" class="label-box">Email address*:</label>
+                    <br>
+                    <input type="email" name="email" placeholder="EMAIL_ADDRESS" required class="input-box">
+                    <br>
+                </div>
+
+                <!-- select -->
+                <div class="form">
+                    <label for="select-tour" class="label-box">Select Tour Package*:</label>
+                    <br>
+                    <select name="select-tour" required>
+                        <option value="Goa">Goa</option>
+                        <option value="Toa">Toa</option>
+                        <option value="Poa">Poa</option>
+                    </select>
+                    <br>
+                </div>
+
+                <!-- select date -->
+                <div class="form">
+                    <label for="arrival-date" class="label-box">Arrival Date*:</label>
+                    <br>
+                    <input type="date" required class="input-box">
+                    <br>
+                </div>
+
+                <!-- select number of person-->
+                <div class="form">
+                    <label for="number-persons" class="label-box">Number of persons*:</label>
+                    <br>
+                    <input type="number" placeholder="UNKNOWN_TYPE" required class="input-box">
+                    <br>
+                </div>
+
+                <!-- checkbox -->
+                <div class="form">
+                    <span class="label-box">What would you want to avail?*</span>
+                    <br>
+                    <input type="checkbox" name="avail" value="boarding">
+                    <label for="boarding" class="label-choose">Boarding</label>
+                    <br>
+                    <input type="checkbox" name="avail" value="fooding">
+                    <label for="fooding" class="label-choose">Fooding</label>
+                    <br>
+                    <input type="checkbox" name="avail" value="sight-seeing">
+                    <label for="sight-seeing" class="label-choose">Sight seeing</label>
+                    <br>
+                </div>
+
+                <!-- discout coupon-->
+                <div class="form">
+                    <label for="discout-coupon" class="label-box">Discount Coupon code:</label>
+                    <br>
+                    <input type="text" name="discout-coupon" placeholder="UNKNOWN_TYPE" class="input-box">
+                    <br>
+                </div>
+
+                <!-- term and conditions-->
+                <div class="form">
+                    <span class="label-box">Term and conditions*</span>
+                    <br>
+                    <input type="radio" name="condition" value="agree" required >
+                    <label for="agree" class="label-choose">I agree &nbsp; &nbsp; &nbsp;</label>
+                    <input type="radio" name="condition" value="disagree" required>
+                    <label for="agree" class="label-choose">I disagree</label>
+                    <br>
+                </div>
+
+                <!-- button -->
+                <button type="submit">Complete reservation</button>
+            </form>
+        </div>
+    </section>
+</body>
